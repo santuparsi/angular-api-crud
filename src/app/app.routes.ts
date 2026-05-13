@@ -6,5 +6,6 @@ import { ViewAll } from './Components/view-all/view-all';
 export const routes: Routes = [
     { path: 'add', component: Add },
     { path: 'edit/:name', component: Edit },
-    { path: 'view', component: ViewAll }
+    { path: 'view', component: ViewAll },
+    { path: '', redirectTo: 'view', pathMatch: 'full' }
 ];
